@@ -1,0 +1,473 @@
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
+/*   border: 1px solid black; */
+  color: #3B3B3B;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.header{
+  height: 96px;
+  border-bottom: 1px solid #F1F1F1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center; 
+}
+.logo{
+  position: absolute;
+  left: 16%;
+/*   border-bottom: 1px solid pink; */
+}
+input#menu {
+  display: none;
+}
+
+.index{
+  display: flex;
+  margin: 0 auto;
+  column-gap: 40px;
+}
+.index a{
+  display: block;
+  color: #000;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+/*   border: 1px solid black; */
+  padding: 4px;
+}
+.index li{
+  position: relative;
+/*   border: 1px solid green; */
+}
+.index a:hover{
+  font-weight: 600;
+
+}
+li:hover .quote {
+  opacity: 1;
+}
+.quote{
+  position: absolute;
+  border-color: #919191;
+  border-style: solid;
+  padding: 4px;   /*引號長度*/
+  opacity: 0;
+}
+.top-left{
+  border-width: 1px 0 0 1px;   /*引號粗細*/
+  top: -1px;  /*相對位置*/
+  left: -1px;
+}
+.top-right{
+  border-width: 1px 1px 0 0;
+  top: -1px;
+  right: -1px;  
+}
+.bottom-left{
+  border-width: 0 0 1px 1px;
+  bottom: -1px;
+  left: -1px;  
+}
+.bottom-right{
+  border-width: 0 1px 1px 0;
+  bottom: -1px;
+  right: -1px;  
+}
+
+.blog-title{
+  margin-top: 120px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-align: center;
+/*   border: 1px solid green;  */
+}
+.description{
+  text-align: center;
+}
+.content img{
+/*   border: 1px solid green;  */
+}
+.blog-title:before{
+  content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-lg.png?raw=true);
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+/*   border: 1px solid green;  */
+  margin-bottom: 20px;
+}
+.blog-title:after{
+  content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-lg.png?raw=true);
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+.blog{
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 80px;
+  margin-bottom: 120px;
+  display: flex;
+/*   flex-wrap: wrap; */
+   justify-content: space-between;
+/*    border: 1px solid green; */
+   max-width:75%;
+   column-gap: 24px;
+  }
+.article-group{
+  max-width:70%;
+/*   border: 1px solid green; */
+}
+.article{
+  display: flex;
+/*   border: 1px solid green; */
+  margin: 32px auto;
+  column-gap: 16px;
+}
+.article img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 8px;
+  border: 1px solid #F1F1F1;
+}
+.blog-meta{
+  display: flex;
+}
+.blog-meta p{
+  color: #5B5B5B;
+  margin-top: 4px;
+}
+.tag{
+   text-decoration: none;
+/*    display: block; */
+   background: #F1F1F1;
+   color: #3B3B3B;
+/*    padding-left: 12px;
+   padding-right: 12px;
+   padding-top: 4px;
+   padding-bottom: 4px; */
+   padding: 4px 12px;
+   margin-left: 16px;
+   border-radius: 16px;
+}
+.article-title{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 16px auto;
+}
+.tag-list{
+/*   border: 1px solid green; */
+  background: #FAFAFA;
+  max-width: 30%;
+  padding-top: 60px;  
+}
+.tag-list a{
+  display: block;
+  font-size: 20px;
+/*   margin-left: 80px;
+  margin-right: 100px; */
+  margin: 32px 100px 16px 80px;
+  text-decoration: none;
+  color: #5B5B5B;
+}
+.tag-list a:hover{
+  font-weight: 600;
+  color: #1B1B1B;
+  box-shadow: 0 1px;
+  padding-bottom: 2px;
+}
+.tag-list .tag-title{
+  border: 1px solid green;
+  color: #1E1E1E;
+}
+.footer{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+  display: flex;
+  justify-content: space-around;
+/*   position: relative; */
+}
+
+/*.left{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.left-bottom{
+  position: absolute;
+  left: 34px;
+  bottom: 0;
+}
+.middle-round{
+  position: absolute;
+  top: 63px;
+  left: 671px;
+}
+.middle-bottom{
+  position: absolute;
+  top: 393px;
+  right: 651px;
+}
+.right{
+  position: absolute;
+  bottom: 27px;
+  right: 0;
+  z-index: 5;
+}
+.right-bottom{
+  position: absolute;
+  right: 17px;
+  bottom: 69px;
+}
+*/
+
+.contact img{
+  margin-top: 119px;
+}
+.contact p{
+  margin-top: 24px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.contact a{
+  margin-left: auto;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #919191;
+  text-decoration: none;
+}
+
+.socialmedia{
+  margin-top: 56px;
+  margin-bottom: 80px;
+  max-width: 306px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.socialmedia a{
+  display: block;
+  align-items: center;
+  border: 1px solid #C1C1C1;
+  margin-top: 24px;
+  padding-left: 88px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right: 100px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  color: #3B3B3B;
+/*   z-index: 10; */
+  }
+
+.socialmedia a:hover{
+  background: #000;
+  color:#FFF;
+}
+
+.socialmedia .form{
+  background:#000;
+  color: #FFF;
+  background-image: url(https://i.imgur.com/bnVDqWv.png);
+  background-position-x: 37px;
+  background-position-y: 18px;
+  background-repeat: no-repeat;
+}
+
+.socialmedia .instagram{
+  background:#FFF;
+  background-image: url(https://imgur.com/l6dYDMv.png);
+  background-position-x: 33px;
+  background-position-y: 17px;
+  background-repeat: no-repeat;
+  color: #5B5B5B;
+}
+
+.socialmedia .facebook{
+  background:#FFF;
+  background-image: url(https://i.imgur.com/tZCPkRO.png);
+  background-position-x: 32px;
+  background-position-y: 16px;
+  background-repeat: no-repeat;
+  color: #5B5B5B;
+}
+
+
+
+@media(max-width:992px){
+  .logo{
+  position: absolute;
+  left: 5%;
+  }
+  .blog-title:before{
+  content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-sm.png?raw=true);
+}
+.blog-title:after{
+  content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-sm.png?raw=true);
+}
+  .blog{
+    flex-direction: column-reverse;
+    box-shadow: 0 1px;
+    padding-bottom:4px;
+  }
+  .tag-list{
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-top: 0;
+  }
+  .tag-list a{
+    display: inline;
+    margin: 5px;
+  }
+  .article-group{
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .article{
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+  .article img{
+    margin: 0 auto;
+    max-width: calc(100% - 12px);
+  }
+  .blog-meta{
+    margin-top: 10px;
+    justify-content: space-between;
+    max-width: 100%;
+
+  }
+	.footer{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+  background-size: Cover;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  }
+  .contact, .socialmedia{
+    max-width:80%
+  }
+}
+
+
+@media(max-width:767px){
+  /*  漢堡REF: https://wayne-blog.com/2022-11-21/pure-css-toggle-menu-icon/ */
+  .logo{
+  position: absolute;
+  left: 3%;
+  }
+  .line {
+/*   border: 1px solid green; */
+  position: absolute;
+  right: 10%;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  }
+  .line .menu,
+  .line .menu::before,
+  .line .menu::after {
+  background: #5B5B5B;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  transition: background ease .15s, top ease .15s .15s, transform ease .15s;
+  width: 20px;
+  }
+  
+  .line .menu {  /*hamburger mid place */
+  top: 6px;
+  }
+  .line .menu::before { /* hamburger up line*/
+  top: -6px;
+  }
+  .line .menu::after { /* hamburger bottom line*/
+  top: 6px;
+  }
+  /*
+  點選選單變叉叉
+  */
+  #menu:checked + .line .menu {
+  background: transparent;
+  }
+  #menu:checked + .line .menu::before {
+  transform: rotate(45deg);
+  }
+  #menu:checked + .line .menu::after {
+  transform: rotate(-45deg);
+  }
+  #menu:checked + .line .menu::before,
+  #menu:checked + .line .menu::after {
+  top: 0;
+  transition: top ease .15s, transform ease .15s .15s;
+  }
+  /*
+  選單開合
+  */
+  #menu:checked ~ .menu-list {
+  max-width: 50%;
+  display: block
+  }
+
+ .menu-list {
+   display: none;
+   background: #FFF;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+/*   padding-top: 60px; */
+/*   padding-right: 10px; */
+   right: 3%;
+   top: 15%;
+   position: fixed;
+   transition: all .3s;
+   overflow: hidden;
+/*    border: 1px solid green;  */
+  }
+
+  /*
+  選單向外推
+  */
+  .menu-list ul {
+    list-style: none;
+    margin: 10px 10px 10px 15px; /*上下右左*/
+    padding: 0;
+  }
+  .menu-list ul>li{
+/*     border: 1px solid orange; */
+    width: auto;
+  }
+  .index{
+  column-gap: 10px;
+  }
+  input#menu {
+  display: none;
+  }
+
+  
+}
+  
+@media(max-width:375px){
+ .footer{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  }
+}
